@@ -1,0 +1,50 @@
+What is Git -> open source and free source control software
+
+Git is used to manage files over time -> see past versions and see the new updates
+
+NONE GIT COMMAND BUT ESSENTIAL:
+
+cd - change directory -> allows to navigate through folders where you want git tracking
+
+example of cd
+
+cd ~ /projects/my-app1 -> this changes the directory of the git to the file named 'my-app1' which is in
+folder 'projects' within the current directory
+
+
+how to initialise git:
+
+git init
+
+
+git add .- NOTE . means all files(curr directory) and subfiles whereas * means only files in the current directory
+. = current directory -> git scans the folders and stages, new files(previously untracked)
+
+git commit -m "Initial commit"
+
+
+git remote add origin https://github.com/user/repo.git
+
+
+git push -u origin main
+
+
+
+
+when you want to update a file - webpage in this example "eggs are bad" on the webpage i create a branch
+off the main essentially another duplicate of the main branch and make any updates ensuring that the main
+branch is safe -> how to do this ->
+
+git branch <branch-name> && git checkout <branch-name>: first line creates the branch into ur git and 
+second line makes it so your next commits will be within the specific <branch-name> - switching the place
+commits
+
+
+or newer version of git
+
+git checkout -b <branch-name> : essentially the same thing just in 1 line of cmd
+
+
+
+once the made changes on the branch are good i could merge them and create a new/updated main branch 
+this 
